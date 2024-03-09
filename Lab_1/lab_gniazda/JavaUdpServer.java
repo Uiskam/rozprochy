@@ -1,5 +1,7 @@
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
 import java.util.Arrays;
 
 public class JavaUdpServer {
@@ -18,11 +20,12 @@ public class JavaUdpServer {
                 Arrays.fill(receiveBuffer, (byte)0);
                 DatagramPacket receivePacket = new DatagramPacket(receiveBuffer, receiveBuffer.length);
                 socket.receive(receivePacket);
-                String msg = new String(receivePacket.getData());
-                System.out.println("received msg: " + msg);
 
+                int nb = ByteBuffer.wrap(receivePacket.getData()).order(ByteOrder.LITTLE_ENDIAN).getInt();
+                nb++;
+                System.out.println("received number: " + nb);
 
-                byte[] sendBuffer = " Ping from srever".getBytes();
+                byte[] sendBuffer = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(nb).array();
                 DatagramPacket sendPacket = new DatagramPacket(sendBuffer, sendBuffer.length, receivePacket.getAddress(), receivePacket.getPort());
                 socket.send(sendPacket);
             }
