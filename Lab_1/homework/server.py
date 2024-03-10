@@ -24,14 +24,12 @@ def brodcast_msg(client_id, encoded_msg, protocol, sender_addr=None):
             elif protocol == 'udp' and addr != sender_addr:
                 udp_server_socekt.sendto(encoded_msg, addr)
 
-
 def handle_udp():
     while True:
         buff, address = udp_server_socekt.recvfrom(1024)
         brodcast_msg(None, buff, 'udp', address)
 
 def handle_tcp_client(client_socket, addr):
-    global clients
     #registering new client
     client_id = client_socket.recv(BUF_SIZE).decode()
     print(f'{client_id} has entered the chat from addr: {addr}')

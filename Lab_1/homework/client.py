@@ -1,8 +1,9 @@
 import threading
 import socket
 import sys
-from config import SERVER_PORT, SERVER_ADDRESS, BUF_SIZE
+from config import SERVER_PORT, SERVER_ADDRESS, BUF_SIZE, MULTI_GROUP, MULTI_PORT
 import select
+import struct
 
 class Chat:
     def __init__(self, client_id):
@@ -13,13 +14,18 @@ class Chat:
         self.tcp_socket.connect((SERVER_ADDRESS, SERVER_PORT))
 
         self.udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-
-        self.udp_socket_recieve = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         self.udp_socket.bind(self.tcp_socket.getsockname())
+
+        self.udp_multi = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
+        self.udp_multi.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        self.udp_multi.bind(('', MULTI_PORT))
+        mreq = struct.pack("4sl", socket.inet_aton(MULTI_GROUP), socket.INADDR_ANY)
+        self.udp_multi.setsockopt(socket.IPPROTO_IP, socket.IP_ADD_MEMBERSHIP, mreq)
 
         print(f'Connecting to server at {SERVER_ADDRESS}:{SERVER_PORT}')
         threading.Thread(target=self.chat_sending).start()
-        threading.Thread(target=self.udp_receive).start()
+        threading.Thread(target=self.udp_receive, args=(self.udp_socket, )).start()
+        threading.Thread(target=self.udp_receive, args=(self.udp_multi, )).start()
         self.tcp_chat_receive()
 
     def close_connection(self):
@@ -50,11 +56,11 @@ class Chat:
             if not self.conn:
                 break
 
-    def udp_receive(self):
+    def udp_receive(self, sock):
         while True:
-            ready_to_read, _, _ = select.select([self.udp_socket], [], [], 3) #ready_to_read, ready_to_write, in_error
-            if self.udp_socket in ready_to_read:
-                buff, address = self.udp_socket.recvfrom(1024)
+            ready_to_read, _, _ = select.select([sock], [], [], 3) #ready_to_read, ready_to_write, in_error
+            if sock in ready_to_read:
+                buff, _ = sock.recvfrom(1024)
                 print(f"\n{buff.decode()}\nEnter message: ",end="")
             if self.conn == False:
                 break
@@ -73,6 +79,12 @@ class Chat:
                     ascii_hitman = f"Image from {self.client_id}:\n{ascii_hitman}"
                     print("seding ascii")
                     self.udp_socket.sendto(ascii_hitman.encode(), (SERVER_ADDRESS, SERVER_PORT))
+            elif message == 'M':
+                sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+                sock.setsockopt(socket.IPPROTO_IP, socket.IP_MULTICAST_TTL, 1)
+                message = b'This is the multicast message.'
+                sock.sendto(message, (MULTI_GROUP, MULTI_PORT))
+
             else:
                 message = f"Message from {self.client_id}: " + message
                 self.tcp_socket.sendall(message.encode())
