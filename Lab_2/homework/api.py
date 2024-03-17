@@ -83,6 +83,12 @@ async def get_form_page(request: Request, start: str, end: str, key: str):
         end = int(end)
     except ValueError:
         return templates.TemplateResponse("error.html", {"request": request, "error_code": 400, "error_message": "Bad Request: start and end must be integers"})
+    if abs(end - start) < 3:
+        return templates.TemplateResponse("error.html", {"request": request, "error_code": 400, "error_message": "Bad Request: start and end must be at least 3 hours apart"})
+    elif start > end or start < 0 or end > 120:
+        return templates.TemplateResponse("error.html", {"request": request, "error_code": 400, "error_message": "Bad Request: start must be smaller than end and both must be between 0 and 120"})
+    if key != SECRET_API_KEY:
+        return templates.TemplateResponse("error.html", {"request": request, "error_code": 401, "error_message": "Unauthorized"})
 
     start_time = get_current_time_plus(hours=start)
     end_time = get_current_time_plus(hours=end)
@@ -116,11 +122,4 @@ async def get_form_page(request: Request, start: str, end: str, key: str):
         context[f'min_temp_{idx}'] = min_temp
         context[f'max_temp_{idx}'] = max_temp
     context["avg_temp"] = round(global_avg / len(cities_data), 2)
-
-    if abs(end - start) < 3:
-        return templates.TemplateResponse("error.html", {"request": request, "error_code": 400, "error_message": "Bad Request: start and end must be at least 3 hours apart"})
-    elif start > end or start < 0 or end > 120:
-        return templates.TemplateResponse("error.html", {"request": request, "error_code": 400, "error_message": "Bad Request: start must be smaller than end and both must be between 0 and 120"})
-    if key != SECRET_API_KEY:
-        return templates.TemplateResponse("error.html", {"request": request, "error_code": 401, "error_message": "Unauthorized"})
     return templates.TemplateResponse("raport.html", context)
