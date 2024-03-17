@@ -99,20 +99,20 @@ async def get_form_page(request: Request, start: str, end: str, key: str):
 
     context = {"request": request, "start_date": start_time, "end_date": end_time}
     global_avg = 0
-    for idx, (city, (open, tommorow)) in enumerate(promises.items()):
-        tommorow = await tommorow
-        open = await open
+    for idx, (city, (open_result, tommorow_result)) in enumerate(promises.items()):
+        tommorow_result = await tommorow_result
+        open_result = await open_result
         try:
-            tommorow.raise_for_status()
+            tommorow_result.raise_for_status()
         except HTTPError as http_err:
-            return templates.TemplateResponse("error.html", {"request": request, "error_code": tommorow.status_code, "error_message": f"tommorow API: {tommorow.reason}"})
+            return templates.TemplateResponse("error.html", {"request": request, "error_code": tommorow_result.status_code, "error_message": f"tommorow API: {tommorow_result.reason}"})
         try:
-            open.raise_for_status()
+            open_result.raise_for_status()
         except HTTPError as http_err:
-            return templates.TemplateResponse("error.html", {"request": request, "error_code": open.status_code, "error_message": f"open weather API: {open.reason}"})
+            return templates.TemplateResponse("error.html", {"request": request, "error_code": open_result.status_code, "error_message": f"open weather API: {open_result.reason}"})
 
-        avg_open, min_open, max_open = parse_tommorow(tommorow.json(), start_time, end_time)
-        avg_tommorow, min_tommorow, max_tommorow = parse_openweather(open.json(), start_time, end_time)
+        avg_open, min_open, max_open = parse_tommorow(tommorow_result.json(), start_time, end_time)
+        avg_tommorow, min_tommorow, max_tommorow = parse_openweather(open_result.json(), start_time, end_time)
         avg = (avg_open + avg_tommorow) / 2
         global_avg += avg
         min_temp = min(min_open, min_tommorow)
