@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather Forecast Raport</title>
+  </head>
+</html>
+
+<body>
+  <h1>Weather Forecast Raport from: {{ start_date }} to: {{ end_date }}</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">City</th>
+        <th scope="col">Avg</th>
+        <th scope="col">Min</th>
+        <th scope="col">Max</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">{{city_name_0}}</th>
+        <td>{{avg_temp_0}}</td>
+        <td>{{min_temp_0}}</td>
+        <td>{{max_temp_0}}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{city_name_1}}</th>
+        <td>{{avg_temp_1}}</td>
+        <td>{{min_temp_1}}</td>
+        <td>{{max_temp_1}}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{city_name_2}}</th>
+        <td>{{avg_temp_2}}</td>
+        <td>{{min_temp_2}}</td>
+        <td>{{max_temp_2}}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{city_name_3}}</th>
+        <td>{{avg_temp_3}}</td>
+        <td>{{min_temp_3}}</td>
+        <td>{{max_temp_3}}</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row">Average temp</th>
+        <td>{{avg_temp}}</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
