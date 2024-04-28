@@ -201,38 +201,38 @@ public interface FridgePrx extends com.zeroc.Ice.ObjectPrx
         return f;
     }
 
-    default void removeGroceriesItem(GroceriesItem GroceriesList)
+    default void removeGroceriesItem(String name)
     {
-        removeGroceriesItem(GroceriesList, com.zeroc.Ice.ObjectPrx.noExplicitContext);
+        removeGroceriesItem(name, com.zeroc.Ice.ObjectPrx.noExplicitContext);
     }
 
-    default void removeGroceriesItem(GroceriesItem GroceriesList, java.util.Map<String, String> context)
+    default void removeGroceriesItem(String name, java.util.Map<String, String> context)
     {
-        _iceI_removeGroceriesItemAsync(GroceriesList, context, true).waitForResponse();
+        _iceI_removeGroceriesItemAsync(name, context, true).waitForResponse();
     }
 
-    default java.util.concurrent.CompletableFuture<Void> removeGroceriesItemAsync(GroceriesItem GroceriesList)
+    default java.util.concurrent.CompletableFuture<Void> removeGroceriesItemAsync(String name)
     {
-        return _iceI_removeGroceriesItemAsync(GroceriesList, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
+        return _iceI_removeGroceriesItemAsync(name, com.zeroc.Ice.ObjectPrx.noExplicitContext, false);
     }
 
-    default java.util.concurrent.CompletableFuture<Void> removeGroceriesItemAsync(GroceriesItem GroceriesList, java.util.Map<String, String> context)
+    default java.util.concurrent.CompletableFuture<Void> removeGroceriesItemAsync(String name, java.util.Map<String, String> context)
     {
-        return _iceI_removeGroceriesItemAsync(GroceriesList, context, false);
+        return _iceI_removeGroceriesItemAsync(name, context, false);
     }
 
     /**
      * @hidden
-     * @param iceP_GroceriesList -
+     * @param iceP_name -
      * @param context -
      * @param sync -
      * @return -
      **/
-    default com.zeroc.IceInternal.OutgoingAsync<Void> _iceI_removeGroceriesItemAsync(GroceriesItem iceP_GroceriesList, java.util.Map<String, String> context, boolean sync)
+    default com.zeroc.IceInternal.OutgoingAsync<Void> _iceI_removeGroceriesItemAsync(String iceP_name, java.util.Map<String, String> context, boolean sync)
     {
         com.zeroc.IceInternal.OutgoingAsync<Void> f = new com.zeroc.IceInternal.OutgoingAsync<>(this, "removeGroceriesItem", null, sync, null);
         f.invoke(false, context, null, ostr -> {
-                     GroceriesItem.ice_write(ostr, iceP_GroceriesList);
+                     ostr.writeString(iceP_name);
                  }, null);
         return f;
     }

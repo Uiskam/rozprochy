@@ -18,10 +18,10 @@ public class FridgeI implements Fridge{
 
     @Override
     public void setStatus(FridgeStatus status, Current current) throws InvalidInput {
-        if (this.fridgeStatus.temperature < -20 || this.fridgeStatus.temperature > 8) {
-            throw new InvalidInput("Temperature out of range. Please use a value between -20 and 20.");
+        if (status.temperature < -20 || status.temperature > 8) {
+            throw new InvalidInput("Temperature out of range. Please use a value between -20 and 8.");
         }
-        if (this.fridgeStatus.humidity < 0 || this.fridgeStatus.humidity > 100) {
+        if (status.humidity < 0 || status.humidity > 100) {
             throw new InvalidInput("Humidity out of range. Please use a value between 0 and 100.");
         }
         this.fridgeStatus = status;
@@ -33,8 +33,13 @@ public class FridgeI implements Fridge{
     }
 
     @Override
-    public void removeGroceriesItem(GroceriesItem item, Current current) {
-        this.groceries.remove(item);
+    public void removeGroceriesItem(String name, Current current) {
+        for (int i = 0; i < this.groceries.size(); i++) {
+            if (this.groceries.get(i).name.equals(name)) {
+                this.groceries.remove(i);
+                break;
+            }
+        }
     }
 
     @Override

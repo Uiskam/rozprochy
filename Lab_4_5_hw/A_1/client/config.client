@@ -1,18 +1,18 @@
 #
-# The server creates one single object adapter with the name
-# "Hello". The following line sets the endpoints for this
-# adapter.
+# The client reads this property to create the reference to the
+# "hello" object in the server.
 #
-AdapterOutdoor.Endpoints=tcp -h 127.0.0.2 -p 10000 -z -t 10000 : udp -h 127.0.0.2 -p 10000 -z
-AdapterOutdoor.ThreadPool.Size=2
+# Calc1.Proxy=calc/calc11 : tcp -h 127.0.0.2 -p 10000 -z : udp -h 127.0.0.2 -p 10000 -z
+# Indoor devices
+AdvancedHeater.Proxy=Heater:AdvancedHeater : tcp -h 127.0.0.2 -p 15000 -z -t 10000 : udp -h 127.0.0.2 -p 15000 -z
 
-AdapterIndoor.Endpoints=tcp -h 127.0.0.2 -p 15000 -z -t 10000 : udp -h 127.0.0.2 -p 15000 -z
-AdapterIndoor.ThreadPool.Size=2
 
 #
-# Warn about connection exceptions
+# Warn about connection exceptions.
 #
 Ice.Warn.Connections=1
+
+Ice.ACM.Timeout=10
 
 #
 # Network Tracing
@@ -22,7 +22,7 @@ Ice.Warn.Connections=1
 # 2 = like 1, but more detailed
 # 3 = like 2, but also trace data transfer
 #
-Ice.Trace.Network=3
+#Ice.Trace.Network=2
 
 #
 # Protocol Tracing
@@ -45,5 +45,5 @@ Ice.Trace.Network=3
 #
 #Ice.Plugin.IceSSL=IceSSL.PluginFactory
 #IceSSL.DefaultDir=certs
-#IceSSL.Keystore=server.jks
+#IceSSL.Keystore=client.jks
 #IceSSL.Password=password

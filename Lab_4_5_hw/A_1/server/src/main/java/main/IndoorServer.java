@@ -10,20 +10,16 @@ public class IndoorServer {
         {
             com.zeroc.Ice.ObjectAdapter adapter = communicator.createObjectAdapter("AdapterIndoor");
 
-            AdvancedHeaterI advancedHeaterI = new AdvancedHeaterI();
-            adapter.add(advancedHeaterI, new Identity("advancedHeater", "heater"));
+            AdvancedHeaterI advancedHeater = new AdvancedHeaterI();
+            adapter.add(advancedHeater, new Identity("advancedHeater", "heater"));
 
-            LightI lightISaloon = new LightI();
-            LightI lightIBathroom = new LightI();
-            LightI lightISleepingRoom = new LightI();
-            LightI lightIKitchen = new LightI();
-            adapter.add(lightISaloon, new Identity("lightSaloon", "light"));
-            adapter.add(lightIBathroom, new Identity("lightBathroom", "light"));
-            adapter.add(lightISleepingRoom, new Identity("lightSleepingRoom", "light"));
-            adapter.add(lightIKitchen, new Identity("lightKitchen", "light"));
+            LightI lightSaloon = new LightI();
+            LightI lightBathroom = new LightI();
+            adapter.add(lightSaloon, new Identity("lightSaloon", "light"));
+            adapter.add(lightBathroom, new Identity("lightBathroom", "light"));
 
-            FridgeI fridgeI = new FridgeI();
-            adapter.add(fridgeI, new Identity("fridge", "fridge"));
+            FridgeI fridge = new FridgeI();
+            adapter.add(fridge, new Identity("fridge", "fridge"));
 
             adapter.activate();
             communicator.waitForShutdown();

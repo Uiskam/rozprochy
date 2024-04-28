@@ -27,7 +27,7 @@ public interface Fridge extends com.zeroc.Ice.Object
 
     GroceriesItem[] getGroceries(com.zeroc.Ice.Current current);
 
-    void removeGroceriesItem(GroceriesItem GroceriesList, com.zeroc.Ice.Current current);
+    void removeGroceriesItem(String name, com.zeroc.Ice.Current current);
 
     /** @hidden */
     static final String[] _iceIds =
@@ -140,10 +140,10 @@ public interface Fridge extends com.zeroc.Ice.Object
     {
         com.zeroc.Ice.Object._iceCheckMode(null, current.mode);
         com.zeroc.Ice.InputStream istr = inS.startReadParams();
-        GroceriesItem iceP_GroceriesList;
-        iceP_GroceriesList = GroceriesItem.ice_read(istr);
+        String iceP_name;
+        iceP_name = istr.readString();
         inS.endReadParams();
-        obj.removeGroceriesItem(iceP_GroceriesList, current);
+        obj.removeGroceriesItem(iceP_name, current);
         return inS.setResult(inS.writeEmptyParams());
     }
 
