@@ -1,0 +1,40 @@
+
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "sr.grpc.gen";
+option java_outer_classname = "CalculatorProto";
+
+package calculator;
+
+message ArithmeticOpArguments {
+  int32 arg1 = 1;
+  int32 arg2 = 2;
+}
+
+message ArithmeticOpResult {
+  double res = 1;
+}
+
+enum OperationType {
+  ADD = 0;
+  SUBTRACT = 1;
+  MULTIPLY = 2;
+  DIVIDE = 3;
+}
+
+message ArithmeticOperation {
+  OperationType name = 1;
+  ArithmeticOpArguments args = 2;
+}
+
+message ManyArithmeticOperations {
+  repeated ArithmeticOperation operations = 1;
+}
+
+service Calculator {
+  rpc Add (ArithmeticOpArguments) returns (ArithmeticOpResult) {}
+  rpc Subtract (ArithmeticOpArguments) returns (ArithmeticOpResult) {}
+  rpc LongArithmeticOperation (ManyArithmeticOperations) returns (ArithmeticOpResult) {}
+}
+
