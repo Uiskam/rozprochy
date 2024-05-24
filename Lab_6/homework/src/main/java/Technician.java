@@ -79,9 +79,6 @@ public class Technician {
             System.err.println("Duplicate values are not allowed.");
             System.exit(1);
         }
-        for (String arg : argv) {
-            System.out.println(arg);
-        }
         for (String specialisation : argv) {
             if (!specialisation.equals("knee") && !specialisation.equals("elbow") && !specialisation.equals("hip")) {
                 System.err.println("Usage: Technician [knee|elbow|hip]+");
