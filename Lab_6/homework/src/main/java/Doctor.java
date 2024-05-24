@@ -54,6 +54,17 @@ public class Doctor {
         channel.basicConsume(doctorName, true, deliverCallback, consumerTag -> {});
     }
 
+    private static void receiveFromAdmin(Channel channel, String EXCHANGE_NAME) throws IOException {
+        channel.exchangeDeclare(EXCHANGE_NAME, "fanout");
+        String queueName = channel.queueDeclare().getQueue();
+        channel.queueBind(queueName, EXCHANGE_NAME, "");
+        DeliverCallback deliverCallback = (consumerTag, delivery) -> {
+            String message = new String(delivery.getBody(), StandardCharsets.UTF_8);
+            System.out.println("Received from admin: " + message);
+        };
+        channel.basicConsume(queueName, true, deliverCallback, consumerTag -> {});
+    }
+
     public static void main(String[] argv) throws Exception {
         Config config = new Config();
 
@@ -66,29 +77,13 @@ public class Doctor {
 
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
-        String EXCHANGE_NAME = config.getProperty("DOCTOR_TO_TECH_EXCHANGE");
+        String DOCTOR_TO_TECH_EXCHANGE = config.getProperty("DOCTOR_TO_TECH_EXCHANGE");
         try (Connection connection = factory.newConnection();
              Channel channel = connection.createChannel()) {
-            channel.exchangeDeclare(EXCHANGE_NAME, "direct");
-
-            Thread toTechnician = new Thread(() -> {
-                try {
-                    sendToTechnician(channel, doctorName, EXCHANGE_NAME);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            });
-            toTechnician.start();
-            Thread fromTechnician = new Thread(() -> {
-                try {
-                    receiveFromTechnician(channel, doctorName, EXCHANGE_NAME);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            });
-            fromTechnician.start();
-            toTechnician.join();
-            fromTechnician.join();
+            channel.exchangeDeclare(DOCTOR_TO_TECH_EXCHANGE, "topic");
+            receiveFromTechnician(channel, doctorName, DOCTOR_TO_TECH_EXCHANGE);
+            receiveFromAdmin(channel, config.getProperty("FROM_ADMIN_TO_ALL_EXCHANGE"));
+            sendToTechnician(channel, doctorName, DOCTOR_TO_TECH_EXCHANGE);
         }
     }
 }
