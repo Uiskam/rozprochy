@@ -49,7 +49,7 @@ public class Doctor {
         channel.queueBind(doctorName, EXCHANGE_NAME, doctorName);
         DeliverCallback deliverCallback = (consumerTag, delivery) -> {
             String message = new String(delivery.getBody(), StandardCharsets.UTF_8);
-            System.out.println("\nReceived: " + message);
+            System.out.println("\nReceived from technician: " + message);
         };
         channel.basicConsume(doctorName, true, deliverCallback, consumerTag -> {});
     }
