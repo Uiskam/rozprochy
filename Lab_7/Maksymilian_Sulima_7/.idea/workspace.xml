@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3b63ea98-445c-4c7b-b6e3-0d9c6644eecb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ZookeeperServerSetup.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/NodeTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_2/homework/Lab_plan_and_hw.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/A_1/server/smarthome.ice" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab_4_5_hw/A_1/server/smarthome.ice" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/dynamic_server/calculator.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.5/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.5/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.5/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.5/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.5/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.5/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.6/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.6/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.6/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.6/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.6/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.6/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.6/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.6/fileHashes/resourceHashesCache.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/8.6/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/file-system.probe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/GreeterGrpc$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/GreeterGrpc$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/GreeterGrpc$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/GreeterGrpc$AsyncService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/GreeterGrpc$GreeterBaseDescriptorSupplier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/GreeterGrpc$GreeterBlockingStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/GreeterGrpc$GreeterFileDescriptorSupplier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/GreeterGrpc$GreeterFutureStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/GreeterGrpc$GreeterImplBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/GreeterGrpc$GreeterMethodDescriptorSupplier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/GreeterGrpc$GreeterStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/GreeterGrpc$MethodHandlers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/GreeterGrpc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/HelloReply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/HelloReply$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/HelloReply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/HelloReplyOrBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/HelloRequest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/HelloRequest$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/HelloRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/HelloRequestOrBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/helloworld/HelloWorldProto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/reflection/ReflectionServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/reflection/ReflectionServer$GreeterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/bin/main/io/grpc/examples/reflection/ReflectionServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/GreeterGrpc$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/GreeterGrpc$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/GreeterGrpc$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/GreeterGrpc$AsyncService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/GreeterGrpc$GreeterBaseDescriptorSupplier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/GreeterGrpc$GreeterBlockingStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/GreeterGrpc$GreeterFileDescriptorSupplier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/GreeterGrpc$GreeterFutureStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/GreeterGrpc$GreeterImplBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/GreeterGrpc$GreeterMethodDescriptorSupplier.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/GreeterGrpc$GreeterStub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/GreeterGrpc$MethodHandlers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/GreeterGrpc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/HelloReply$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/HelloReply$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/HelloReply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/HelloReplyOrBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/HelloRequest$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/HelloRequest$Builder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/HelloRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/HelloRequestOrBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/helloworld/HelloWorldProto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/reflection/ReflectionServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/reflection/ReflectionServer$GreeterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/classes/java/main/io/grpc/examples/reflection/ReflectionServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/annotations.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/auth.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/backend.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/billing.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/client.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/config_change.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/consumer.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/context.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/control.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/distribution.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/documentation.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/endpoint.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/error_reason.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/field_behavior.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/field_info.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/http.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/httpbody.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/label.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/launch_stage.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/log.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/logging.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/metric.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/monitored_resource.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/monitoring.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/policy.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/quota.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/resource.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/routing.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/service.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/source_info.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/system_parameter.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/usage.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/api/visibility.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/cloud/audit/audit_log.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/cloud/extended_operations.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/cloud/location/locations.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/geo/type/viewport.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/logging/type/http_request.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/logging/type/log_severity.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/longrunning/operations.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/protobuf/any.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/protobuf/api.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/protobuf/descriptor.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/protobuf/duration.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/protobuf/empty.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/protobuf/field_mask.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/protobuf/source_context.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/protobuf/struct.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/protobuf/timestamp.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/protobuf/type.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/protobuf/wrappers.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/rpc/code.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/rpc/context/attribute_context.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/rpc/context/audit_context.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/rpc/error_details.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/rpc/status.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/type/calendar_period.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/type/color.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/type/date.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/type/datetime.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/type/dayofweek.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/type/decimal.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/type/expr.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/type/fraction.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/type/interval.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/type/latlng.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/type/localized_text.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/type/money.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/type/month.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/type/phone_number.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/type/postal_address.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/type/quaternion.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/google/type/timeofday.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/grpc/binlog/v1/binarylog.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/grpc/channelz/v1/channelz.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/grpc/health/v1/health.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/extracted-include-protos/main/grpc/reflection/v1alpha/reflection.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/generated/source/proto/main/grpc/io/grpc/examples/helloworld/GreeterGrpc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/generated/source/proto/main/java/io/grpc/examples/helloworld/HelloReply.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/generated/source/proto/main/java/io/grpc/examples/helloworld/HelloReplyOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/generated/source/proto/main/java/io/grpc/examples/helloworld/HelloRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/generated/source/proto/main/java/io/grpc/examples/helloworld/HelloRequestOrBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/generated/source/proto/main/java/io/grpc/examples/helloworld/HelloWorldProto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/bin/reflection-server" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/bin/reflection-server.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/animal-sniffer-annotations-1.23.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/annotations-4.1.1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/checker-qual-3.37.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/error_prone_annotations-2.23.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/example-reflection.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/failureaccess-1.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/grpc-api-1.63.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/grpc-context-1.63.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/grpc-core-1.63.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/grpc-netty-shaded-1.63.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/grpc-protobuf-1.63.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/grpc-protobuf-lite-1.63.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/grpc-services-1.63.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/grpc-stub-1.63.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/grpc-util-1.63.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/gson-2.10.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/guava-32.1.3-jre.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/j2objc-annotations-2.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/jsr305-3.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/perfmark-api-0.26.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/proto-google-common-protos-2.29.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/protobuf-java-3.25.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/install/example-reflection/lib/protobuf-java-util-3.25.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/libs/example-reflection.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/resources/main/helloworld/helloworld.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/tmp/.cache/expanded/expanded.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/tmp/scripts/ReflectionServer/reflection-server" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/build/tmp/scripts/ReflectionServer/reflection-server.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/protoc-gen-grpc-java-1.62.2-linux-x86_64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/src/main/java/io/grpc/examples/reflection/ReflectionServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/src/main/proto/calculator/calculator.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/example-reflection/src/main/proto/helloworld/helloworld.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/server/.gradle/8.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/server/.gradle/8.5/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/server/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/server/.gradle/8.5/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/server/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/server/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/server/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/server/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/server/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/server/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/server/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/server/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/server/bin/main/io/grpc/examples/reflection/ReflectionServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/server/bin/main/io/grpc/examples/reflection/ReflectionServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/server/bin/main/io/grpc/examples/reflection/ReflectionServer$GreeterImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/server/bin/main/io/grpc/examples/reflection/ReflectionServer$GreeterImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/server/bin/main/io/grpc/examples/reflection/ReflectionServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab_4_5_hw/I_2/server/bin/main/io/grpc/examples/reflection/ReflectionServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Lab_6/homework/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab_6/homework/README.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2heFbEsBIV8jnzgRsTnv619x0jN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Executor.executor": "Run",
+    "Application.ZooKeeperClient.executor": "Run",
+    "Application.ZooKeeperWatcher (1).executor": "Run",
+    "Application.ZooKeeperWatcher.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/zookeeper-configs" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ZooKeeperWatcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ZooKeeperWatcher" />
+      <module name="Maksymilian_Sulima_7" />
+      <option name="PROGRAM_PARAMETERS" value="eog giphy.gif" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ZooKeeperWatcher" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b63ea98-445c-4c7b-b6e3-0d9c6644eecb" name="Changes" comment="" />
+      <created>1717946708440</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717946708440</updated>
+      <workItem from="1717946709480" duration="19293000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
